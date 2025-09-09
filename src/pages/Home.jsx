@@ -2,6 +2,9 @@ import './Home.css'
 
 export default function Home() {
   return (
+
+
+
     <header className="home-hero" role="banner">
       <div className="home-container">
         <div className="home-text">
@@ -9,11 +12,11 @@ export default function Home() {
           {/* כותרת בקשת */}
           <svg
             className="home-title-arc"
-            viewBox="0 20 500 140"
+            viewBox="0 20 500 145"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
           >
-            {/* הקשת — אפשר לשחק עם המספרים */}
+            {/* הקשת */}
             <path
               id="homeArc"
               d="M20 180 A300 350 0 0 1 450 180"
@@ -51,6 +54,39 @@ export default function Home() {
           </p>
         </div>
       </div>
+
+      <main role="main" className="home-main">
+        <div className="home-button">
+
+
+          <a 
+          className="btn btn--whatsapp"
+          href="https://wa.me/972543352523?text=Hey%20Shiraz%2C%20I%20came%20from%20your%20website!"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          WhatsApp
+          </a>
+
+          <a 
+          className="btn btn--instegram"
+          href="https://instagram.com/__snowhite__ink"
+          target="_blank"
+          rel="noopener noreferrer"
+          >
+          Instegram
+          </a>
+
+          
+
+
+
+
+
+        </div>
+      </main>
+
     </header>
+    
   )
 }
