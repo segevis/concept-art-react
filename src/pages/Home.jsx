@@ -49,7 +49,7 @@ export default function Home() {
 
           {/* תיאור */}
           <p className="home-description">
-            Welcome to my creative space. Here you’ll find a curated collection of concept art,
+            Welcome to my creative space. Here you’ll find a collection of my concept art,
             tattoo designs, and personal sketches that showcase my artistic journey and style.
           </p>
         </div>
@@ -57,7 +57,6 @@ export default function Home() {
 
       <main role="main" className="home-main">
         <div className="home-button">
-
 
           <a 
           className="btn btn--whatsapp"
@@ -77,16 +76,18 @@ export default function Home() {
           Instegram
           </a>
 
+          <a
+          className="btn btn--phone"
+          href="tel:+972543352523"
+          >
+          Phone
+          </a>
+
           
-
-
-
-
 
         </div>
       </main>
 
     </header>
-    
   )
 }
