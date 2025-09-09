@@ -1,27 +1,107 @@
-.gallery 
-{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 1rem;
+/* ========== HEADER ייעודי לעמוד Concept Art ========== */
+
+/* ה־header בעמוד הזה בלבד */
+.site-header {
+  max-width: 900px;   /* זה היה אצלך בגלובלי ועובר לכאן */
+  min-width: 320px;
+  margin: 0 auto;     /* מרכוז בלוק ההדר */
 }
 
-.card
-{
-    border: 1px sold #eee;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #fff;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: clamp(8px, 3vw, 24px);
+  flex-wrap: nowrap;
+  flex-direction: row-reverse; /* לוגו מימין, טקסט משמאל */
 }
 
-.card img 
-{
-    display: block;
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 1/1;
-    object-fit: cover;
-    cursor:zoom-in;
-    transition: transform .25 ease;
+.brand-logo {
+  flex: 0 0 auto;
+  width: clamp(120px, 26vw, 280px);
+  height: auto;
+  max-height: 40vh;
+  object-fit: contain;
 }
 
-.card:hover img {transform: scale(1.02);}
+.brand-text {
+  flex: 1 1 0;
+  min-width: 0;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.brand-title {
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: clamp(28px, 6vw, 56px);
+  color: #000;
+}
+
+.brand-subtitle {
+  margin: .25rem 0 0;
+  font-weight: 400;
+  font-size: clamp(14px, 3vw, 22px);
+  color: #242222;
+}
+
+/* מסכים נמוכים לרוחב */
+@media (max-height: 500px) and (orientation: landscape) {
+  .brand-logo { width: clamp(90px, 18vw, 200px); max-height: 32vh; }
+  .brand-title { font-size: clamp(22px, 4.5vw, 40px); }
+  .brand-subtitle { font-size: clamp(12px, 2.4vw, 18px); }
+}
+
+/* מובייל/טאבלט — הכל בטור וממורכז */
+@media (max-width: 700px) {
+  .brand {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .brand-text { text-align: center; }
+  .brand-logo {
+    width: clamp(140px, 40vw, 220px);
+    max-height: none;
+  }
+}
+
+/* ========== GALLERY ========== */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* דסקטופ/טאבלט */
+  gap: 1rem;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  cursor: zoom-in;
+  transition: transform .25s ease;
+}
+
+.card:hover img { transform: scale(1.02); }
+
+/* גלריה — התאמות רוחב */
+@media (max-width: 900px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: .9rem;
+  }
+}
+@media (max-width: 600px) {
+  .gallery {
+    grid-template-columns: 1fr;  /* עמודה אחת במובייל צר */
+    gap: .75rem;
+  }
+}

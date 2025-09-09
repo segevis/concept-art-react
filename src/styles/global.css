@@ -1,91 +1,41 @@
+/* ========== Reset קטן ========== */
 *,
 *::before,
 *::after { box-sizing: border-box; }
 
+/* ========== קונטיינר עליון לכל האתר ========== */
 .app {
   width: 80%;
   max-width: 1100px;
   min-width: 320px;
-  margin: 0 auto; 
-  
+  margin: 0 auto;
 }
 
-
+/* בסיס */
 body {
   margin: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #111;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
+/* מבנה דפים גלובלי */
 .site-header,
 .subnav,
 .content {
   width: 100%;
   max-width: none;
   min-width: 0;
-  margin: 0;        /* אין צורך ב-margin צדדי */
-  padding: 0;       /* תשאיר אם אתה צריך ריווחים */
-}
-
-.site-header {
-  max-width: 900px;
-  min-width: 320px;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: clamp(8px, 3vw, 24px);
-  flex-wrap: nowrap;
-  flex-direction: row-reverse;
-}
-
-.brand-logo {
-  flex: 0 0 auto;
-  width: clamp(120px, 26vw, 280px);
-  height: auto;
-  max-height: 40vh;
-}
-
-.brand-text { 
-  flex: 1 1 0;
-  min-width: 0;
-  line-height: 1.2;
-  text-align: left;
-}
-
-.brand-title {
   margin: 0;
-  font-family: 'Times New Roman', Times, serif;
-  font-weight: 800;
-  font-size: clamp(28px, 6vw, 56px);
-  color: #000;
+  padding: 0;
 }
 
-.brand-subtitle {
-  margin: .25rem 0 0;
-  font-weight: 400;
-  font-size: clamp(14px, 3vw, 22px);
-  color: #242222;
-}
-
-@media (max-height: 500px) and (orientation: landscape) {
-  .brand-logo { width: clamp(90px, 18vw, 200px); max-height: 32vh; }
-  .brand-title { font-size: clamp(22px, 4.5vw, 40px); }
-  .brand-subtitle { font-size: clamp(12px, 2.4vw, 18px); }
-}
-
+/* ========== ניווט עליון ========== */
 .subnav {
   position: static;
   background: #fff;
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
-  margin: 0;
-  padding: 0;
 }
 
 .subnav-list {
@@ -107,15 +57,17 @@ body {
   font-size: .95rem;
 }
 .subnav-list a.active { text-decoration: underline; }
-.subnav-list a:hover, .subnav-list a:focus { text-decoration: underline; }
+.subnav-list a:hover,
+.subnav-list a:focus { text-decoration: underline; }
 
+/* ========== אזור תוכן כללי ========== */
 .content {
   max-width: 1100px;
   min-width: 320px;
   margin: 1.5rem 0;
 }
 
-/* Lightbox shared styles (also used inside ConceptArt.css) */
+/* ========== Lightbox (גלובלי) ========== */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -140,4 +92,17 @@ body {
   background: transparent;
   color: #fff;
   cursor: pointer;
+}
+
+/* ========== התאמות מובייל כלליות ========== */
+@media (max-width: 900px) {
+  .app { width: 88%; }
+}
+@media (max-width: 700px) {
+  .app { width: 92%; }
+  .subnav-list {
+    gap: .75rem;
+    padding: .5rem .5rem;
+    flex-wrap: wrap; /* שהתפריט לא יגלוש */
+  }
 }

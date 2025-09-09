@@ -7,17 +7,6 @@ import Sketches from './pages/Sketches.jsx'
 export default function App() {
   return (
     <div className="app">
-      {/* <header className="site-header" role="banner">
-        <div className="container brand">
-          <div className="brand-text" aria-label="שם המותג">
-            <h1 className="brand-title">CONCEPT ART</h1>
-            <h2 className="brand-subtitle">
-              A showcase of Shiraz Holender’s original concept illustrations and artistic explorations
-            </h2>
-          </div>
-          <img className="brand-logo" src="/pic/logo.png" alt="לוגו אמנות — Snow White Art" />
-        </div>
-      </header> */}
 
       <nav className="subnav" aria-label="secondary">
         <ul className="subnav-list">
