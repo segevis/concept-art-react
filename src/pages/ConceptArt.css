@@ -1,10 +1,9 @@
 /* ========== HEADER ייעודי לעמוד Concept Art ========== */
 
-/* ה־header בעמוד הזה בלבד */
 .site-header {
   max-width: 900px;   /* זה היה אצלך בגלובלי ועובר לכאן */
   min-width: 320px;
-  margin: 0 auto;     /* מרכוז בלוק ההדר */
+  margin: 0 auto;    
 }
 
 .brand {
@@ -12,7 +11,7 @@
   align-items: center;
   gap: clamp(8px, 3vw, 24px);
   flex-wrap: nowrap;
-  flex-direction: row-reverse; /* לוגו מימין, טקסט משמאל */
+  flex-direction: row-reverse;
 }
 
 .brand-logo {
