@@ -28,8 +28,8 @@ export default function ConceptArt() {
         {images.map((name, i) => (
           <div className="card" key={name}>
             <img
-              src={`/pic/${name}`}
-              data-full={`/pic/${name}`}
+              src={`pic/${name}`}
+              data-full={`pic/${name}`}
               alt={`Concept art — piece ${i+1}`}
               loading="lazy"
               onClick={(e)=> setPreview({ src: e.currentTarget.dataset.full, alt: e.currentTarget.alt })}
