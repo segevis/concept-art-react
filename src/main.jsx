@@ -6,10 +6,8 @@ import './styles/global.css'
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <BrowserRouter> */}
-    <HashRouter>
+    <BrowserRouter>
       <App />
-    </HashRouter>
-    {/* </BrowserRouter> */}
+    </BrowserRouter>
   </React.StrictMode>
 )

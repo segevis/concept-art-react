@@ -1,7 +1,6 @@
-/* ========== HEADER ייעודי לעמוד Concept Art ========== */
 
 .site-header {
-  max-width: 900px;   /* זה היה אצלך בגלובלי ועובר לכאן */
+  max-width: 900px;   
   min-width: 320px;
   margin: 0 auto;    
 }
