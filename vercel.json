@@ -1,0 +1,4 @@
+{
+  "buildCommand": "npm run build && (test -d pic && cp -r pic dist/ || true) && (test -d Spic && cp -r Spic dist/ || true) && (test -d Tpic && cp -r Tpic dist/ || true)",
+  "outputDirectory": "dist"
+}
