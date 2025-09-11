@@ -2,10 +2,7 @@ import { useState } from 'react'
 import Lightbox from '../components/Lightbox.jsx'
 import '../styles/Headings.css';
 
-const images = [
-  'back.png','back2.png','back3.png','back4.png','back5.png','back6.png','back7.png','back8.png',
-  'back9.png','back10.png','back11.png','back12.png','back13.png','back14.png','back15.png','back16.png',
-]
+const images = ['t0.jpg','t1.jpg','t2.jpg','t3.jpg','t4.jpg','t5.jpg','t6.jpg','t7.jpg','t8.jpg','t9.jpg','t10.jpg','t11.jpg','t13.jpg','t14.jpg','t15.jpg','t16.jpg','t17.jpg','t18.jpg','t19.jpg']
 
 export default function Tattoos() {
   const [preview, setPreview] = useState(null)
@@ -23,8 +20,8 @@ export default function Tattoos() {
           {images.map((name, i) => (
             <div className="card" key={name}>
               <img
-                src={`pic/${name}`}
-                data-full={`pic/${name}`}
+                src={`Tpic/${name}`}
+                data-full={`Tpic/${name}`}
                 alt={`Concept art — piece ${i+1}`}
                 loading="lazy"
                 onClick={(e)=> setPreview({ src: e.currentTarget.dataset.full, alt: e.currentTarget.alt })}
