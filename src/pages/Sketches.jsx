@@ -2,10 +2,7 @@ import { useState } from 'react'
 import Lightbox from '../components/Lightbox.jsx'
 import '../styles/Headings.css';
 
-const images = [
-  'back.png','back2.png','back3.png','back4.png','back5.png','back6.png','back7.png','back8.png',
-  'back9.png','back10.png','back11.png','back12.png','back13.png','back14.png','back15.png','back16.png',
-]
+const images = ['s0.jpg','s1.jpg','s2.jpg','s3.jpg','s4.jpg','s5.jpg','s6.jpg','s7.jpg','s8.jpg','s9.jpg','s10.jpg','s11.jpg','s13.jpg','s14.jpg','s15.jpg','s16.jpg','s17.jpg','s18.jpg',]
 
 export default function Sketches() {
     const [preview, setPreview] = useState(null)
@@ -23,8 +20,8 @@ export default function Sketches() {
           {images.map((name, i) => (
             <div className="card" key={name}>
               <img
-                src={`pic/${name}`}
-                data-full={`pic/${name}`}
+                src={`Spic/${name}`}
+                data-full={`Spic/${name}`}
                 alt={`Concept art — piece ${i+1}`}
                 loading="lazy"
                 onClick={(e)=> setPreview({ src: e.currentTarget.dataset.full, alt: e.currentTarget.alt })}
