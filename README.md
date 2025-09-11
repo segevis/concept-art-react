@@ -1,18 +1,51 @@
-# Concept Art React (Vite)
+# 🎨 Artist Portfolio  
 
-This ports your Concept Art page into a React app with 4 routes: Home, Concept Art, Tattoos, Sketches.
+This is a **freelance project** I developed — an **interactive, responsive portfolio website** built to showcase the work of a young artist.  
+The site provides a clean and elegant interface for browsing artworks, fully optimized for **desktop, tablet, and mobile devices**.  
 
-## Quick start
+---
+
+## ✨ Features  
+
+- **Responsive Design** – seamless across all screen sizes  
+- **Category Navigation** – explore artworks by type:  
+  - 🎭 *Concept Art*  
+  - 🖋️ *Tattoos*  
+  - ✏️ *Sketches*  
+- **Interactive Lightbox** – view images in full detail  
+- **Modern Tech Stack** – built with React + Vite for speed and simplicity  
+- **Easy Deployment** – works with GitHub Pages, Vercel, Netlify, or any static hosting  
+
+---
+
+## 📂 Project Structure  
+
+artist-portfolio/
+├── public/
+│ └── pic/ # Images and assets
+├── src/
+│ ├── components/ # Reusable UI components
+│ ├── pages/ # Pages (Home, Concept Art, Tattoos, Sketches)
+│ ├── styles/ # Global styles
+│ ├── App.jsx # Routes & layout
+│ └── main.jsx # React DOM entry
+├── package.json
+├── vite.config.js
+└── README.md
+
+---
+
+## 🚀 Getting Started  
+
+### Prerequisites  
+- [Node.js](https://nodejs.org/) v16+  
+- npm or yarn  
+
+### Installation  
+
 ```bash
-npm i
+git clone https://github.com/segevis/artist-portfolio.git
+cd artist-portfolio
+npm install
 npm run dev
-```
 
-## Put your images
-- Copy your existing `pic` folder (logo + back.png..back16.png) into `public/pic` so that paths like `/pic/back.png` work.
-
-## Routes
-- `/` Home
-- `/concept-art` Concept Art (with lightbox)
-- `/tattoos` Tattoos
-- `/sketches` Sketches
