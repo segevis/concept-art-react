@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Lightbox from '../components/Lightbox.jsx'
-import './ConceptArt.css'
+import '../styles/ConceptArt.css'
 
 const images = [
   'back.png','back2.png','back3.png','back4.png','back5.png','back6.png','back7.png','back8.png',
@@ -15,12 +15,12 @@ export default function ConceptArt() {
       <header className="site-header" role="banner">
         <div className="container brand">
           <div className="brand-text" aria-label="שם המותג">
-            <h1 className="brand-title">CONCEPT ART</h1>
+            <h1 className="brand-title">Concept Art</h1>
             <h2 className="brand-subtitle">
               A showcase of Shiraz Holender’s original concept illustrations and artistic explorations
             </h2>
           </div>
-          <img className="brand-logo" src="/pic/logo.png" alt="Snow White Art logo" />
+          <img className="brand-logo" src="pic/logo.png" alt="Snow White Art logo" />
         </div>
       </header>
 

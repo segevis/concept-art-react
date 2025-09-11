@@ -68,7 +68,6 @@ body {
 .subnav-list a:hover,
 .subnav-list a:focus { text-decoration: underline; }
 
-/* ========== אזור תוכן כללי ========== */
 .content {
   max-width: 1100px;
   min-width: 320px;
@@ -111,6 +110,6 @@ body {
   .subnav-list {
     gap: .75rem;
     padding: .5rem .5rem;
-    flex-wrap: wrap; /* שהתפריט לא יגלוש */
+    flex-wrap: wrap;
   }
 }

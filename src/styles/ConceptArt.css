@@ -19,6 +19,7 @@
   height: auto;
   max-height: 40vh;
   object-fit: contain;
+  margin-bottom: 0.5rem;
 }
 
 .brand-text {
@@ -90,7 +91,6 @@
 
 .card:hover img { transform: scale(1.02); }
 
-/* גלריה — התאמות רוחב */
 @media (max-width: 900px) {
   .gallery {
     grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
@@ -99,7 +99,7 @@
 }
 @media (max-width: 600px) {
   .gallery {
-    grid-template-columns: 1fr;  /* עמודה אחת במובייל צר */
+    grid-template-columns: 1fr;
     gap: .75rem;
   }
 }

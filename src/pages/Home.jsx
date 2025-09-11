@@ -1,10 +1,7 @@
-import './Home.css'
+import '../styles/Home.css'
 
 export default function Home() {
   return (
-
-
-
     <header className="home-hero" role="banner">
       <div className="home-container">
         <div className="home-text">
@@ -82,12 +79,8 @@ export default function Home() {
           >
           Phone
           </a>
-
-          
-
         </div>
       </main>
-
     </header>
   )
 }
