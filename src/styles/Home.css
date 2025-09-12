@@ -33,7 +33,7 @@
     text-align: center;
     margin: 1rem auto 0;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: clamp(14px, 3.2vw , 24px);
     line-height: 1.65;
     color: #0f0f0f;
@@ -54,7 +54,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    min-width: 140px;
+    min-width: 110px;
     
     padding: .6rem 1.2rem;
     border-radius: 999px;
