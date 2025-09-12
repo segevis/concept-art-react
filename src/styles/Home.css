@@ -42,6 +42,7 @@
 .home-button
 {
     display:grid;
+    grid-auto-flow: column;
     justify-content: center;
     align-items: center;
     gap: clamp(17px, 3vw, 28px);
